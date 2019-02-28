@@ -28,7 +28,7 @@
 
     <li>
         <a href="/cost/getCostProject.do" class="menu">
-            <h2 class="menu-title menu-title_2nd" style="width: 204px;">api cost</h2>
+            <h2 class="menu-title menu-title_2nd" style="width: 204px;">接口耗时</h2>
             <ul class="menu-dropdown">
             </ul>
         </a>
@@ -36,27 +36,27 @@
 
     <li>
         <a class="menu">
-            <h2 class="menu-title menu-title_6th" style="width: 204px;">data access</h2>
+            <h2 class="menu-title menu-title_6th" style="width: 204px;">数据接入</h2>
             <ul class="menu-dropdown">
-                <li id="accessDisplay">display</li>
-                <li id="accessNew">new</li>
+                <li id="accessDisplay">历史接入展示</li>
+                <li id="accessNew">新建接入</li>
             </ul>
         </a>
     </li>
 
     <li>
         <a class="menu">
-            <h2 class="menu-title menu-title_4th" style="width: 204px;">alarm history</h2>
+            <h2 class="menu-title menu-title_4th" style="width: 204px;">报警历史</h2>
             <ul class="menu-dropdown">
-                <li id="api">api</li>
-                <li id="server">server</li>
+                <li id="api">接口耗时报警历史</li>
+                <li id="server">服务器报警历史</li>
             </ul>
         </a>
     </li>
 
     <li>
         <a href="/offline/getOfflineProject.do" class="menu">
-            <h2 class="menu-title menu-title_5th" style="width: 204px;">offline param</h2>
+            <h2 class="menu-title menu-title_5th" style="width: 204px;">离线参数</h2>
             <ul class="menu-dropdown">
             </ul>
         </a>
@@ -64,17 +64,17 @@
 
     <li>
         <a class="menu">
-            <h2 class="menu-title menu-title_3rd" style="width: 204px;">server state</h2>
+            <h2 class="menu-title menu-title_3rd" style="width: 204px;">服务器状态</h2>
             <ul class="menu-dropdown">
-                <li id="serverNow">now</li>
-                <li id="serverHistory">history</li>
+                <li id="serverNow">当前状态</li>
+                <li id="serverHistory">历史状态</li>
             </ul>
         </a>
     </li>
 
     <li>
         <a href="/project/getProjectList.do" class="menu">
-            <h2 class="menu-title-home" style="width: 204px;">Project</h2>
+            <h2 class="menu-title-home" style="width: 204px;">项目管理</h2>
             <ul class="menu-dropdown">
             </ul>
         </a>
@@ -82,11 +82,11 @@
 
     <li>
         <a class="menu">
-            <h2 class="menu-title menu-title_7th" style="width: 204px;">Account</h2>
+            <h2 class="menu-title menu-title_7th" style="width: 204px;">账户</h2>
             <ul class="menu-dropdown">
-                <li id="account">account</li>
-                <li id="login">log in</li>
-                <li id="logout">log out</li>
+                <li id="account">用户信息</li>
+                <li id="login">登录</li>
+                <li id="logout">退出</li>
             </ul>
         </a>
     </li>

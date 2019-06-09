@@ -12,7 +12,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
-    <title>Home</title>
+    <title>报警</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="stylesheet" href="/css/reset.min.css">
     <link rel="stylesheet" href="/css/style.css">
@@ -84,7 +84,7 @@
         <a class="menu">
             <h2 class="menu-title menu-title_7th" style="width: 204px;">账户</h2>
             <ul class="menu-dropdown">
-                <li id="account">用户信息</li>
+                <li id="account">个人信息</li>
                 <li id="login">登录</li>
                 <li id="logout">退出</li>
             </ul>
@@ -132,7 +132,7 @@
 
 
 <br><br><br><br>
-<font size="5" style="margin-left: 40%">Method alarms history</font>
+<font size="5" style="margin-left: 42%">方法历史报警</font>
 <div class="container" style="margin-top: -100px">
 
     <div class="component">
@@ -140,13 +140,13 @@
             <thead>
 
             <tr>
-                <th>project_id</th>
-                <th>method_id</th>
-                <th>class_name</th>
-                <th>method_name</th>
-                <th>cost_alarm_num</th>
-                <th>real_cost</th>
-                <th>alarm_time</th>
+                <th>项目id</th>
+                <th>方法id</th>
+                <th>类名</th>
+                <th>方法名</th>
+                <th>报警指标</th>
+                <th>实际耗时</th>
+                <th>报警时间</th>
             </tr>
             </thead>
 

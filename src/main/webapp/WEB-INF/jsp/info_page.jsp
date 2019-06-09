@@ -11,7 +11,6 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <head>
     <meta charset="UTF-8">
-    <title>Home</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="stylesheet" href="/css/reset.min.css">
     <link rel="stylesheet" href="/css/style.css">
@@ -24,7 +23,7 @@
     <script type="text/javascript" src="/js/script.js"></script>
 
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title>User Account</title>
+    <title>个人信息</title>
 </head>
 <body>
 
@@ -89,7 +88,7 @@
         <a class="menu">
             <h2 class="menu-title menu-title_7th" style="width: 204px;">账户</h2>
             <ul class="menu-dropdown">
-                <li id="account">用户信息</li>
+                <li id="account">个人信息</li>
                 <li id="login">登录</li>
                 <li id="logout">退出</li>
             </ul>
@@ -152,7 +151,7 @@
                     font-weight: bold;
                     margin: 5px 0 0 0;
                     width: 200px;
-                    margin-left: 20px;">Your Name</h3>
+                    margin-left: 20px;">昵称</h3>
                 <p style="float: left; margin: 0; width: 310px">
                     <input type="text" value="Monitor User" id="user" readonly="readonly"/>
                 </p>
@@ -167,7 +166,7 @@
                     font-weight: bold;
                     margin: 5px 0 0 0;
                     width: 200px;
-                    margin-left: 20px;">Your Phone
+                    margin-left: 20px;">电话
                 </h3>
                 <p style="float: left; margin: 0; width: 310px">
                     <input type="text" value=${userInfo.phone} id="phone" readonly="readonly"/>
@@ -183,7 +182,7 @@
                     font-weight: bold;
                     margin: 5px 0 0 0;
                     width: 200px;
-                    margin-left: 20px;">Email
+                    margin-left: 20px;">邮箱
                 </h3>
                 <p style="float: left; margin: 0; width: 310px">
                     <input type="text" value=${userInfo.email} name="email"/>
@@ -199,7 +198,7 @@
                     font-weight: bold;
                     margin: 5px 0 0 0;
                     width: 200px;
-                    margin-left: 20px;">Password
+                    margin-left: 20px;">密码
                 </h3>
                 <p style="float: left; margin: 0; width: 310px">
                     <input type="text" value=${userInfo.password} name="password"/>

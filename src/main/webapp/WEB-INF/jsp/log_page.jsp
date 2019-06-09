@@ -10,7 +10,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>login</title>
+    <title>登录</title>
 
     <link rel="stylesheet" href="/css/login.css">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">

@@ -17,7 +17,7 @@
     <meta http-equiv="Content-Type" content="text/plain; charset=UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Offline params</title>
+    <title>离线参数</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
 
@@ -94,7 +94,7 @@
         <a class="menu">
             <h2 class="menu-title menu-title_7th" style="width: 204px;">账户</h2>
             <ul class="menu-dropdown">
-                <li id="account">用户信息</li>
+                <li id="account">个人信息</li>
                 <li id="login">登录</li>
                 <li id="logout">退出</li>
             </ul>
@@ -144,7 +144,7 @@
 <div class="container home">
 
     <div class="row">
-        <font size="5" style="margin-left: 40%">Method params history</font>
+        <font size="5" style="margin-left: 42%">方法历史参数</font>
 
         <div class="top-panel">
             <div class="btn-group">
@@ -163,12 +163,12 @@
             <table id="firm_table" class="table table-striped table-bordered table-hover">
                 <thead>
                 <tr>
-                    <th>project_id</th>
-                    <th>method_id</th>
-                    <th>method_class</th>
-                    <th>method_name</th>
-                    <th>upload_time</th>
-                    <th>content</th>
+                    <th>项目id</th>
+                    <th>方法id</th>
+                    <th>类名</th>
+                    <th>方法名</th>
+                    <th>上传时间</th>
+                    <th>内容</th>
                 </tr>
                 </thead>
 

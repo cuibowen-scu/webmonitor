@@ -86,7 +86,7 @@
         <a class="menu">
             <h2 class="menu-title menu-title_7th" style="width: 204px;">账户</h2>
             <ul class="menu-dropdown">
-                <li id="account">用户信息</li>
+                <li id="account">个人信息</li>
                 <li id="login">登录</li>
                 <li id="logout">退出</li>
             </ul>
@@ -143,23 +143,23 @@
             <ul id="img-slider" style="height: 450px;">
                 <li class="img">
                     <img src="/images/01.png"/>
-                    <div class="label"><a href="/cost/getCostProject.do">Api cost</a></div>
+                    <div class="label"><a href="/cost/getCostProject.do">接口耗时</a></div>
                 </li>
                 <li class="img">
                     <img src="/images/02.png"/>
-                    <div class="label"><a href="/access/getAccessList.do">Data access</a></div>
+                    <div class="label"><a href="/access/getAccessList.do">数据接入</a></div>
                 </li>
                 <li class="img">
                     <img src="/images/03.png"/>
-                    <div class="label"><a href="/alarm/api.do">Alarm history</a></div>
+                    <div class="label"><a href="/alarm/api.do">报警历史</a></div>
                 </li>
                 <li class="img">
                     <img src="/images/04.png"/>
-                    <div class="label"><a href="/offline/getOfflineProject.do">Offline param</a></div>
+                    <div class="label"><a href="/offline/getOfflineProject.do">离线参数</a></div>
                 </li>
                 <li class="img">
                     <img src="/images/05.png"/>
-                    <div class="label"><a href="/server/getServerStateProjectPage.do">Server state</a></div>
+                    <div class="label"><a href="/server/getServerStateProjectPage.do">服务器状态</a></div>
                 </li>
             </ul>
             <ul class="switcher jQ_sliderSwitch">

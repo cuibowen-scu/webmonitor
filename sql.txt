@@ -43,7 +43,7 @@ INSERT INTO `access_info` (`phone`, `access_id`, `access_name`, `hostname`, `por
 CREATE TABLE IF NOT EXISTS `cost_method_info` (
   `project_id` int(11) DEFAULT NULL,
   `method_id` int(11) NOT NULL AUTO_INCREMENT,
-  `method_class` varchar(128) DEFAULT NULL COMMENT '用户配置的项目方法所在class全路径',
+  `method_class` varchar(128) DEFAULT NULL COMMENT 'user配置的项目方法所在class全路径',
   `method_name` varchar(128) DEFAULT NULL,
   `if_cost_need_warn` varchar(128) DEFAULT 'no' COMMENT '是否需要方法超时报警',
   `cost_warn_num` int(11) DEFAULT '0' COMMENT '报警指标',
@@ -65,7 +65,7 @@ CREATE TABLE IF NOT EXISTS `user_info` (
   `email` varchar(128) NOT NULL,
   `password` varchar(128) NOT NULL,
   PRIMARY KEY (`phone`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='用户的电话，email等信息';
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='user的电话，email等信息';
 
 -- 正在导出表  mydb.user_info 的数据：~2 rows (大约)
 /*!40000 ALTER TABLE `user_info` DISABLE KEYS */;
@@ -91,7 +91,7 @@ CREATE TABLE IF NOT EXISTS `user_project_info` (
   `mem_warn_num` double DEFAULT '0' COMMENT '报警指标',
   `disk_warn_num` double DEFAULT '0',
   PRIMARY KEY (`project_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=784 DEFAULT CHARSET=utf8 COMMENT='用户创建的project信息';
+) ENGINE=InnoDB AUTO_INCREMENT=784 DEFAULT CHARSET=utf8 COMMENT='user创建的project信息';
 
 -- 正在导出表  mydb.user_project_info 的数据：~17 rows (大约)
 /*!40000 ALTER TABLE `user_project_info` DISABLE KEYS */;
@@ -164,7 +164,7 @@ INSERT INTO `params` (`project_id`, `method_id`, `method_class`, `method_name`, 
 
 -- 导出  表 userdb.server_performance 结构
 CREATE TABLE IF NOT EXISTS `server_performance` (
-  `project_id` int(11) DEFAULT NULL COMMENT '用户项目唯一id',
+  `project_id` int(11) DEFAULT NULL COMMENT 'user项目唯一id',
   `time_min` varchar(128) DEFAULT NULL COMMENT '采集时间，分钟粒度',
   `if_cpu_need_warn` varchar(128) DEFAULT NULL,
   `if_mem_need_warn` varchar(128) DEFAULT NULL,
@@ -178,7 +178,7 @@ CREATE TABLE IF NOT EXISTS `server_performance` (
   `if_cpu_warned` varchar(128) DEFAULT NULL,
   `if_mem_warned` varchar(128) DEFAULT NULL,
   `if_disk_warned` varchar(128) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='用户服务器性能表\r\n';
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='user服务器性能表\r\n';
 
 -- 正在导出表  userdb.server_performance 的数据：~2 rows (大约)
 /*!40000 ALTER TABLE `server_performance` DISABLE KEYS */;
@@ -189,18 +189,18 @@ INSERT INTO `server_performance` (`project_id`, `time_min`, `if_cpu_need_warn`, 
 
 -- 导出  表 userdb.time_cost 结构
 CREATE TABLE IF NOT EXISTS `time_cost` (
-  `project_id` int(11) DEFAULT NULL COMMENT '用户项目唯一id',
-  `method_id` int(11) DEFAULT NULL COMMENT '用户项目方法唯一id',
-  `class_name` varchar(128) DEFAULT NULL COMMENT '用户方法所在类全路径',
-  `method_name` varchar(128) DEFAULT NULL COMMENT '用户方法名',
-  `start_nano_time` bigint(20) DEFAULT NULL COMMENT '用户方法被调用纳秒值',
-  `start_user_time` varchar(128) DEFAULT NULL COMMENT '用户方法被调用时间，粒度为秒',
-  `end_nano_time` bigint(20) DEFAULT NULL COMMENT '用户方法调用结束纳秒值',
+  `project_id` int(11) DEFAULT NULL COMMENT 'user项目唯一id',
+  `method_id` int(11) DEFAULT NULL COMMENT 'user项目方法唯一id',
+  `class_name` varchar(128) DEFAULT NULL COMMENT 'user方法所在类全路径',
+  `method_name` varchar(128) DEFAULT NULL COMMENT 'user方法名',
+  `start_nano_time` bigint(20) DEFAULT NULL COMMENT 'user方法被调用纳秒值',
+  `start_user_time` varchar(128) DEFAULT NULL COMMENT 'user方法被调用时间，粒度为秒',
+  `end_nano_time` bigint(20) DEFAULT NULL COMMENT 'user方法调用结束纳秒值',
   `if_cost_need_warn` varchar(128) DEFAULT 'no',
   `cost_warn_num` int(11) DEFAULT '0',
-  `cost` int(11) DEFAULT NULL COMMENT '用户方法耗时，单位为毫秒',
+  `cost` int(11) DEFAULT NULL COMMENT 'user方法耗时，单位为毫秒',
   `if_warned` varchar(128) DEFAULT NULL COMMENT '是否报警，yes/no'
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='用户API接口响应时间表';
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='userAPI接口响应时间表';
 
 -- 正在导出表  userdb.time_cost 的数据：~16 rows (大约)
 /*!40000 ALTER TABLE `time_cost` DISABLE KEYS */;

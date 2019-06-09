@@ -13,7 +13,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="refresh" content="3">
-    <title>Time Cost</title>
+    <title>接口耗时</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="stylesheet" href="/css/reset.min.css">
     <link rel="stylesheet" href="/css/style.css">
@@ -85,7 +85,7 @@
         <a class="menu">
             <h2 class="menu-title menu-title_7th" style="width: 204px;">账户</h2>
             <ul class="menu-dropdown">
-                <li id="account">用户信息</li>
+                <li id="account">个人信息</li>
                 <li id="login">登录</li>
                 <li id="logout">退出</li>
             </ul>
@@ -94,7 +94,7 @@
 
 </ul>
 
-&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;
 
 <img src="/images/home.png" id="home">
 
@@ -173,11 +173,11 @@
 
         title: [{
             left: 'center',
-            text: 'Gradient along the y axis'
+            text: '沿Y轴的渐变'
         }, {
             top: '55%',
             left: 'center',
-            text: 'Gradient along the x axis'
+            text: '沿X轴的渐变'
         }],
         tooltip: {
             trigger: 'axis'
@@ -216,7 +216,7 @@
 </script>
 
 <br><br><br><br>
-<font size="5" style="margin-left: 40%">Access data</font>
+<font size="5" style="margin-left: 42%">接入数据展示</font>
 <div class="container" style="margin-top: -100px">
 
     <div class="component">
@@ -224,8 +224,8 @@
             <thead>
 
             <tr>
-                <th>time_field/x</th>
-                <th>action_field/y</th>
+                <th>时间维度字段/x轴</th>
+                <th>数值字段/y轴</th>
             </tr>
             </thead>
 

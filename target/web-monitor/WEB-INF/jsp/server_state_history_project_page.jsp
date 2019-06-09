@@ -11,7 +11,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
-    <title>Home</title>
+    <title>服务器状态</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="stylesheet" href="/css/reset.min.css">
     <link rel="stylesheet" href="/css/style.css">
@@ -83,7 +83,7 @@
         <a class="menu">
             <h2 class="menu-title menu-title_7th" style="width: 204px;">账户</h2>
             <ul class="menu-dropdown">
-                <li id="account">用户信息</li>
+                <li id="account">个人信息</li>
                 <li id="login">登录</li>
                 <li id="logout">退出</li>
             </ul>
@@ -131,7 +131,7 @@
 
 
 <br><br><br><br>
-<font size="5" style="margin-left: 40%">Please choose a project</font>
+<font size="5" style="margin-left: 42%">请选择一个项目</font>
 <div class="container" style="margin-top: -100px">
 
     <div class="component">
@@ -139,14 +139,14 @@
         <table>
             <thead>
             <tr>
-                <th>project_id</th>
-                <th>project_name</th>
-                <th>cpu_need_alarm?</th>
-                <th>mem_need_alarm?</th>
-                <th>disk_need_alarm?</th>
-                <th>cpu_alarm_num</th>
-                <th>mem_alarm_num</th>
-                <th>disk_alarm_num</th>
+                <th>项目id</th>
+                <th>项目名</th>
+                <th>cpu需要报警？</th>
+                <th>内存需要报警？</th>
+                <th>磁盘需要报警？</th>
+                <th>cpu报警指标</th>
+                <th>内存报警指标</th>
+                <th>磁盘报警指标</th>
                 <th></th>
             </tr>
             </thead>
@@ -161,7 +161,7 @@
                     <td>${temp.cpu_warn_num} ms</td>
                     <td>${temp.mem_warn_num} ms</td>
                     <td>${temp.disk_warn_num} ms</td>
-                    <td><a href="/server/getProjectServerStateHistory.do?projectId=${temp.project_id}">choose</a></td>
+                    <td><a href="/server/getProjectServerStateHistory.do?projectId=${temp.project_id}">查看</a></td>
                 </tr>
             </c:forEach>
 

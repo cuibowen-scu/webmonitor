@@ -11,7 +11,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
-    <title>Home</title>
+    <title>项目管理</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
 
@@ -89,7 +89,7 @@
         <a class="menu">
             <h2 class="menu-title menu-title_7th" style="width: 204px;">账户</h2>
             <ul class="menu-dropdown">
-                <li id="account">用户信息</li>
+                <li id="account">个人信息</li>
                 <li id="login">登录</li>
                 <li id="logout">退出</li>
             </ul>
@@ -98,7 +98,7 @@
 
 </ul>
 
-&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;
 
 <img src="/images/home.png" id="home">
 
@@ -143,12 +143,15 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
 
 <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#newModal">
-    Add a project
+    新建项目
 </button>
 
 
@@ -159,17 +162,17 @@
         <table style="margin: 0;width: 100%">
             <thead>
             <tr>
-                <th>p_id</th>
-                <th>p_name</th>
-                <th>host</th>
-                <th>port</th>
-                <th>user</th>
-                <th>password</th>
-                <th>db</th>
-                <th>cpu_alarm?</th>
-                <th>mem_alarm?</th>
-                <th>disk_alarm?</th>
-                <th>warn_num</th>
+                <th>项目id</th>
+                <th>项目名</th>
+                <th>主机</th>
+                <th>端口</th>
+                <th>用户</th>
+                <th>密码</th>
+                <th>数据库</th>
+                <th>cpu报警？</th>
+                <th>内存报警？</th>
+                <th>磁盘报警？</th>
+                <th>报警值</th>
                 <th></th>
             </tr>
             </thead>
@@ -197,14 +200,14 @@
                            data-mem_need=${temp.mem_need_warn} data-disk_need=${temp.disk_need_warn}
                            data-cpu_alarm_num=${temp.cpu_warn_num} data-mem_alarm_num=${temp.mem_warn_num}
                            data-disk_alarm_num=${temp.disk_warn_num}>
-                            edit
+                            修改
                         </a>
                         &nbsp;&nbsp;&nbsp;
                         <a href="/project/deleteProject.do?projectId=${temp.project_id}">
-                            delete
+                            删除
                         </a>
                         &nbsp;&nbsp;&nbsp;
-                        <a href="/project/getProjectMethods.do?projectId=${temp.project_id}">goto</a>
+                        <a href="/project/getProjectMethods.do?projectId=${temp.project_id}">查看</a>
                     </td>
                 </tr>
             </c:forEach>
@@ -223,13 +226,13 @@
                     &times;
                 </button>
                 <h4 class="modal-title" id="editModalLabel">
-                    Project Info
+                    项目信息
                 </h4>
             </div>
             <div class="modal-body">
                 <form class="form-horizontal" role="form" action="/project/updateProject.do" method="post">
                     <div class="form-group">
-                        <label for="project_id" class="col-sm-2 control-label">project_id</label>
+                        <label for="project_id" class="col-sm-2 control-label">项目id</label>
                         <div class="col-sm-9">
                             <input type="text" id="project_id" name="project_id" class="form-control well"
                                    readonly="readOnly"/>
@@ -237,84 +240,84 @@
                     </div>
 
                     <div class="form-group">
-                        <label for="project_name" class="col-sm-2 control-label">project_name</label>
+                        <label for="project_name" class="col-sm-2 control-label">项目名</label>
                         <div class="col-sm-9">
                             <input type="text" id="project_name" name="project_name" class="form-control well"/>
                         </div>
                     </div>
 
                     <div class="form-group">
-                        <label for="host" class="col-sm-2 control-label">host</label>
+                        <label for="host" class="col-sm-2 control-label">主机</label>
                         <div class="col-sm-9">
                             <input type="text" id="host" name="host" class="form-control well"/>
                         </div>
                     </div>
 
                     <div class="form-group">
-                        <label for="port" class="col-sm-2 control-label">port</label>
+                        <label for="port" class="col-sm-2 control-label">端口</label>
                         <div class="col-sm-9">
                             <input type="text" id="port" name="port" class="form-control well"/>
                         </div>
                     </div>
 
                     <div class="form-group">
-                        <label for="user" class="col-sm-2 control-label">user</label>
+                        <label for="user" class="col-sm-2 control-label">用户</label>
                         <div class="col-sm-9">
                             <input type="text" id="user" name="user" class="form-control well"/>
                         </div>
                     </div>
 
                     <div class="form-group">
-                        <label for="password" class="col-sm-2 control-label">password</label>
+                        <label for="password" class="col-sm-2 control-label">密码</label>
                         <div class="col-sm-9">
                             <input type="text" id="password" name="password" class="form-control well"/>
                         </div>
                     </div>
 
                     <div class="form-group">
-                        <label for="db" class="col-sm-2 control-label">db</label>
+                        <label for="db" class="col-sm-2 control-label">数据库</label>
                         <div class="col-sm-9">
                             <input type="text" id="db" name="db" class="form-control well"/>
                         </div>
                     </div>
 
                     <div class="form-group">
-                        <label for="cpu_need" class="col-sm-2 control-label">cpu_need</label>
+                        <label for="cpu_need" class="col-sm-2 control-label">c报警？</label>
                         <div class="col-sm-9">
                             <input type="text" id="cpu_need" name="cpu_need" class="form-control well"/>
                         </div>
                     </div>
 
                     <div class="form-group">
-                        <label for="mem_need" class="col-sm-2 control-label">mem_need</label>
+                        <label for="mem_need" class="col-sm-2 control-label">m报警？</label>
                         <div class="col-sm-9">
                             <input type="text" id="mem_need" name="mem_need" class="form-control well"/>
                         </div>
                     </div>
 
                     <div class="form-group">
-                        <label for="disk_need" class="col-sm-2 control-label">disk_need</label>
+                        <label for="disk_need" class="col-sm-2 control-label">d报警？</label>
                         <div class="col-sm-9">
                             <input type="text" id="disk_need" name="disk_need" class="form-control well"/>
                         </div>
                     </div>
 
                     <div class="form-group">
-                        <label for="cpu_alarm_num" class="col-sm-2 control-label">c_alarm_num</label>
+                        <label for="cpu_alarm_num" class="col-sm-2 control-label">cpu指标</label>
                         <div class="col-sm-9">
                             <input type="text" id="cpu_alarm_num" name="cpu_alarm_num" class="form-control well"/>
                         </div>
                     </div>
 
                     <div class="form-group">
-                        <label for="mem_alarm_num" class="col-sm-2 control-label">m_alarm_num</label>
+                        <label for="mem_alarm_num" class="col-sm-2 control-label">内存指标</label>
                         <div class="col-sm-9">
                             <input type="text" id="mem_alarm_num" name="mem_alarm_num" class="form-control well"/>
                         </div>
                     </div>
 
                     <div class="form-group">
-                        <label for="disk_alarm_num" class="col-sm-2 control-label">d_alarm_num</label>
+                        <label for="disk_alarm_num" class="col-sm-2 control-label">磁盘指标</label>
                         <div class="col-sm-9">
                             <input type="text" id="disk_alarm_num" name="disk_alarm_num" class="form-control well"/>
                         </div>
@@ -322,10 +325,10 @@
 
 
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">cancel
+                        <button type="button" class="btn btn-default" data-dismiss="modal">取消
                         </button>
                         <button type="submit" class="btn btn-primary">
-                            update
+                            提交
                         </button>
                     </div>
                 </form>
@@ -371,107 +374,107 @@
             <div class="modal-body">
                 <form class="form-horizontal" role="form" action="/project/addProject.do" method="post">
                     <div class="form-group">
-                        <label for="project_name" class="col-sm-2 control-label">project_name</label>
+                        <label for="project_name" class="col-sm-2 control-label">项目名</label>
                         <div class="col-sm-9">
                             <input type="text" id="project_name1" name="project_name" class="form-control well"
-                                   placeholder="your project name"/>
+                                   placeholder="您的项目名"/>
                         </div>
                     </div>
 
                     <div class="form-group">
-                        <label for="host" class="col-sm-2 control-label">host</label>
+                        <label for="host" class="col-sm-2 control-label">主机</label>
                         <div class="col-sm-9">
                             <input type="text" id="host1" name="host" class="form-control well"
-                                   placeholder="the database host your want to store your data"/>
+                                   placeholder="您想存储数据的数据库的主机名"/>
                         </div>
                     </div>
 
                     <div class="form-group">
-                        <label for="port" class="col-sm-2 control-label">port</label>
+                        <label for="port" class="col-sm-2 control-label">端口</label>
                         <div class="col-sm-9">
                             <input type="text" id="port1" name="port" class="form-control well"
-                                   placeholder="the database port your want to store your data"/>
+                                   placeholder="您想存储数据的数据库的端口"/>
                         </div>
                     </div>
 
                     <div class="form-group">
-                        <label for="user" class="col-sm-2 control-label">user</label>
+                        <label for="user" class="col-sm-2 control-label">用户</label>
                         <div class="col-sm-9">
                             <input type="text" id="user1" name="user" class="form-control well"
-                                   placeholder="the database username your want to store your data"/>
+                                   placeholder="您想存储数据的数据库的用户名"/>
                         </div>
                     </div>
 
                     <div class="form-group">
-                        <label for="password" class="col-sm-2 control-label">password</label>
+                        <label for="password" class="col-sm-2 control-label">密码</label>
                         <div class="col-sm-9">
                             <input type="text" id="password1" name="password" class="form-control well"
-                                   placeholder="the database password your want to store your data"/>
+                                   placeholder="您想存储数据的数据库的密码"/>
                         </div>
                     </div>
 
                     <div class="form-group">
-                        <label for="db" class="col-sm-2 control-label">db</label>
+                        <label for="db" class="col-sm-2 control-label">数据库</label>
                         <div class="col-sm-9">
                             <input type="text" id="db1" name="db" class="form-control well"
-                                   placeholder="the database name your want to store your data"/>
+                                   placeholder="数据库名"/>
                         </div>
                     </div>
 
                     <div class="form-group">
-                        <label for="cpu_need" class="col-sm-2 control-label">cpu_need</label>
+                        <label for="cpu_need" class="col-sm-2 control-label">c报警？</label>
                         <div class="col-sm-9">
                             <input type="text" id="cpu_need1" name="cpu_need" class="form-control well"
-                                   placeholder="if your project need cpu monitor? type yes or no"/>
+                                   placeholder="您的项目需要监控cpu利用率并报警吗， 输入 yes 或 no"/>
                         </div>
                     </div>
 
                     <div class="form-group">
-                        <label for="mem_need" class="col-sm-2 control-label">mem_need</label>
+                        <label for="mem_need" class="col-sm-2 control-label">m报警？</label>
                         <div class="col-sm-9">
                             <input type="text" id="mem_need1" name="mem_need" class="form-control well"
-                                   placeholder="if your project need memory monitor? type yes or no"/>
+                                   placeholder="您的项目需要监控内存利用率并报警吗， 输入 yes 或 no"/>
                         </div>
                     </div>
 
                     <div class="form-group">
-                        <label for="disk_need" class="col-sm-2 control-label">disk_need</label>
+                        <label for="disk_need" class="col-sm-2 control-label">d报警？</label>
                         <div class="col-sm-9">
                             <input type="text" id="disk_need1" name="disk_need" class="form-control well"
-                                   placeholder="if your project need disk monitor? type yes or no"/>
+                                   placeholder="您的项目需要监控磁盘利用率并报警吗， 输入 yes 或 no"/>
                         </div>
                     </div>
 
                     <div class="form-group">
-                        <label for="cpu_alarm_num" class="col-sm-2 control-label">c_alarm_num</label>
+                        <label for="cpu_alarm_num" class="col-sm-2 control-label">cpu指标</label>
                         <div class="col-sm-9">
                             <input type="text" id="cpu_alarm_num1" name="cpu_alarm_num" class="form-control well"
-                                   placeholder="type the alarm num if your project need cpu alarm, else type 0"/>
+                                   placeholder="如果需要cpu报警，输入报警指标, 否则输入 0"/>
                         </div>
                     </div>
 
                     <div class="form-group">
-                        <label for="mem_alarm_num" class="col-sm-2 control-label">m_alarm_num</label>
+                        <label for="mem_alarm_num" class="col-sm-2 control-label">内存指标</label>
                         <div class="col-sm-9">
                             <input type="text" id="mem_alarm_num1" name="mem_alarm_num" class="form-control well"
-                                   placeholder="type the alarm num if your project need memory alarm, else type 0"/>
+                                   placeholder="如果需要内存报警，输入报警指标, 否则输入 0"/>
                         </div>
                     </div>
 
                     <div class="form-group">
-                        <label for="disk_alarm_num" class="col-sm-2 control-label">d_alarm_num</label>
+                        <label for="disk_alarm_num" class="col-sm-2 control-label">磁盘指标</label>
                         <div class="col-sm-9">
                             <input type="text" id="disk_alarm_num1" name="disk_alarm_num" class="form-control well"
-                                   placeholder="type the alarm num if your project need disk alarm, else type 0"/>
+                                   placeholder="如果需要磁盘报警，输入报警指标, 否则输入 0"/>
                         </div>
                     </div>
 
 
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">cancel
+                        <button type="button" class="btn btn-default" data-dismiss="modal">取消
                         </button>
                         <button type="submit" class="btn btn-primary">
-                            submit
+                            提交
                         </button>
                     </div>
                 </form>

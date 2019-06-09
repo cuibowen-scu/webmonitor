@@ -11,7 +11,6 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <head>
     <meta charset="UTF-8">
-    <title>Home</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="stylesheet" href="/css/reset.min.css">
     <link rel="stylesheet" href="/css/style.css">
@@ -24,7 +23,7 @@
     <script type="text/javascript" src="/js/script.js"></script>
 
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title>User Account</title>
+    <title>数据接入</title>
 </head>
 <body>
 
@@ -89,7 +88,7 @@
         <a class="menu">
             <h2 class="menu-title menu-title_7th" style="width: 204px;">账户</h2>
             <ul class="menu-dropdown">
-                <li id="account">用户信息</li>
+                <li id="account">个人信息</li>
                 <li id="login">登录</li>
                 <li id="logout">退出</li>
             </ul>
@@ -98,7 +97,7 @@
 
 </ul>
 
-&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;
 
 <img src="/images/home.png" id="home">
 
@@ -151,7 +150,7 @@
                     font-weight: bold;
                     margin: 5px 0 0 0;
                     width: 200px;
-                    margin-left: 20px;">Access Name</h3>
+                    margin-left: 20px;">接入名称</h3>
                 <p style="float: left; margin: 0; width: 310px">
                     <input type="text" value="" name="access_name"/>
                 </p>
@@ -166,7 +165,7 @@
                     font-weight: bold;
                     margin: 5px 0 0 0;
                     width: 200px;
-                    margin-left: 20px;">Hostname
+                    margin-left: 20px;">主机
                 </h3>
                 <p style="float: left; margin: 0; width: 310px">
                     <input type="text" value="" name="hostname"/>
@@ -182,7 +181,7 @@
                     font-weight: bold;
                     margin: 5px 0 0 0;
                     width: 200px;
-                    margin-left: 20px;">Port
+                    margin-left: 20px;">端口
                 </h3>
                 <p style="float: left; margin: 0; width: 310px">
                     <input type="text" value="" name="port"/>
@@ -198,7 +197,7 @@
                     font-weight: bold;
                     margin: 5px 0 0 0;
                     width: 200px;
-                    margin-left: 20px;">Username
+                    margin-left: 20px;">user名
                 </h3>
                 <p style="float: left; margin: 0; width: 310px">
                     <input type="text" value="" name="username"/>
@@ -214,7 +213,7 @@
                     font-weight: bold;
                     margin: 5px 0 0 0;
                     width: 200px;
-                    margin-left: 20px;">Password
+                    margin-left: 20px;">密码
                 </h3>
                 <p style="float: left; margin: 0; width: 310px">
                     <input type="text" value="" name="password"/>
@@ -230,7 +229,7 @@
                     font-weight: bold;
                     margin: 5px 0 0 0;
                     width: 200px;
-                    margin-left: 20px;">DB name
+                    margin-left: 20px;">数据库
                 </h3>
                 <p style="float: left; margin: 0; width: 310px">
                     <input type="text" value="" name="db_name"/>
@@ -246,7 +245,7 @@
                     font-weight: bold;
                     margin: 5px 0 0 0;
                     width: 200px;
-                    margin-left: 20px;">Table
+                    margin-left: 20px;">数据表
                 </h3>
                 <p style="float: left; margin: 0; width: 310px">
                     <input type="text" value="" name="table"/>
@@ -262,7 +261,7 @@
                     font-weight: bold;
                     margin: 5px 0 0 0;
                     width: 200px;
-                    margin-left: 20px;">Time Field
+                    margin-left: 20px;">时间维度字段/x轴
                 </h3>
                 <p style="float: left; margin: 0; width: 310px">
                     <input type="text" value="" name="time_field"/>
@@ -278,7 +277,7 @@
                     font-weight: bold;
                     margin: 5px 0 0 0;
                     width: 200px;
-                    margin-left: 20px;">Action Field
+                    margin-left: 20px;">数值字段/y轴
                 </h3>
                 <p style="float: left; margin: 0; width: 310px">
                     <input type="text" value="" name="action_field"/>
